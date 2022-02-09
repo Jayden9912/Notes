@@ -59,7 +59,7 @@ Fill in host ip address, give this session a name and click save (change the por
 
 ![putty1](https://user-images.githubusercontent.com/85933053/153229962-d7eb6543-5b65-4cb8-82f5-a5f61afe7627.jpg) 
 
-After saving, open the session that you just saved under default settings.
+After saving, open the session that you just saved under default settings and enter the user's password when prompted.
 ### 5
 Once the SSH tunnels is established, launch the x11vnc
 ```
