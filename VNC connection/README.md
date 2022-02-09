@@ -67,6 +67,6 @@ x11vnc -usepwd -display :0
 ```
 
 ### 6
-Open TightVNC Viewer\n
-Type in host_ip_addresss::5900 and click connect\n
+Open TightVNC Viewer  
+Type in host_ip_addresss::5900 and click connect  
 Enter the x11vnc password when prompted
