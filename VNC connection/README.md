@@ -66,7 +66,7 @@ Once the SSH tunnels is established, launch the x11vnc
 x11vnc -usepwd -display :0
 ```
 
-### 6
+### 6(pending)
 Open TightVNC Viewer  
 Type in host_ip_addresss::5900 and click connect  
 Enter the x11vnc password when prompted
