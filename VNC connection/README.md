@@ -1,4 +1,4 @@
-# VNC (Virtual Network Computing)
+# VNC (Virtual Network Computing) on VPN
 ### Host: Ubuntu
 ### Client: Windows
 
@@ -47,9 +47,7 @@ x11vnc -storepasswd /home/user/.x11vnc/passwd
 ```
 
 ### 4
-Set up SSH tunnel in Putty
-Fill in the source port and destination AND **click** Add
-![putty3](https://user-images.githubusercontent.com/85933053/153229596-956fe489-b15d-4468-978d-a3674192c9d1.jpg)
+Set up SSH connection in Putty
 
 Fill in the username of the Server (optional)
 
@@ -61,12 +59,14 @@ Fill in host ip address, give this session a name and click save (change the por
 
 After saving, open the session that you just saved under default settings and enter the user's password when prompted.
 ### 5
-Once the SSH tunnels is established, launch the x11vnc
+Once the SSH connection is established, launch the x11vnc
 ```
 x11vnc -usepwd -display :0
 ```
 
-### 6(pending)
+### 6
 Open TightVNC Viewer  
 Type in host_ip_addresss::5900 and click connect  
 Enter the x11vnc password when prompted
+
+### VPN is one of the way to secure the VNC connection. SSH and SSL can be used too. SSH have be done by port forwarding to the localhost. However, loopback connection will cause "cascading windows" effect and it defeats the purpose of screensharing.
